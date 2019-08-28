@@ -259,7 +259,7 @@ body .Flex .box {
   @supports (transition: initial) {
     html .Flex .box,
     body .Flex .box {
-      margin: 200px 0 0 10px;
+      margin: 300px 0 0 10px;
     }
   }
 }
