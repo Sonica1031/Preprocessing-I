@@ -156,6 +156,7 @@ html, body {
 	display: flex;
 		.box{
 			display: flex;
+			-webkit-box-flex: initial;
 			flex-direction: column;
 			justify-content: space-between;
 			align-content: center;
@@ -166,13 +167,9 @@ html, body {
 
 			@media (max-width: 500px){
 				margin: 250px 0 0 10px;
-
-			@supports (transition: initial) {
-				margin: 300px 0 0 10px;
 				}
 			}
 	}
-}
 
 header {
 
@@ -267,7 +264,7 @@ header {
 			}
 		}
 	}
-
+}
 	footer{
 		nav{
 			width: 80%;
@@ -300,7 +297,6 @@ header {
 			}
 		}
 	}
-}
 
 .middle-image{
 margin: 10px;
