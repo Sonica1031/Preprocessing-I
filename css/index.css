@@ -242,7 +242,6 @@ body .Flex {
 html .Flex .box,
 body .Flex .box {
   display: flex;
-  -webkit-box-flex: initial;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
