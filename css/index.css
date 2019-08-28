@@ -244,6 +244,12 @@ body .Flex .box {
   margin: 200px 0 0 10px;
   height: auto;
 }
+@media (max-width: 500px) {
+  html .Flex .box,
+  body .Flex .box {
+    margin: 250px 0 0 10px;
+  }
+}
 html header nav,
 body header nav {
   width: 400px;
