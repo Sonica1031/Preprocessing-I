@@ -257,6 +257,12 @@ body .Flex .box {
     margin: 250px 0 0 10px;
   }
 }
+@media (max-width: 500px) and (-webkit-transition) {
+  html .Flex .box,
+  body .Flex .box {
+    margin: 300px 0 0 10px;
+  }
+}
 html header nav,
 body header nav {
   width: 400px;
