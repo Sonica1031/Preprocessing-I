@@ -155,18 +155,18 @@ body {
   font-size: 0.625rem;
   scroll-behavior: smooth;
 }
-@supports (transition: initial) {
-  html,
-  body {
-    background-image: url('../images/bg-mobile.PNG');
-  }
-}
 @media (max-width: 800px) {
   html,
   body {
     background-image: url('../images/bg-mobile.PNG');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  @supports (transition: initial) {
+    html,
+    body {
+      background-image: url('../images/bg-mobile.PNG');
+    }
   }
 }
 html h1,

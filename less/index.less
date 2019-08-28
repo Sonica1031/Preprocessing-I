@@ -81,15 +81,15 @@ html, body {
 	background-position: 100%;
 	font-size: 0.625rem;
 	scroll-behavior: smooth;
-
-	@supports (transition: initial) {
-		background-image: url('../images/bg-mobile.PNG');
-	}
 	
 	@media(max-width:800px){
 		background-image: url('../images/bg-mobile.PNG');
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		@supports (transition: initial) {
+			background-image: url('../images/bg-mobile.PNG');
+		}
 	}
 
 	h1{
