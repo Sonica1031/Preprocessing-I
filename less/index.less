@@ -53,7 +53,218 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+.container{
+	width: 90%;
+	margin: auto;
 }
 
+html, body {
+	height: 100%;
+	background-image: url('../images/bg.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100%;
+	font-size: 0.625rem;
+	
+	@media(max-width:800px){
+		background-image: url('../images/bg-mobile.PNG');
+		background-repeat: no-repeat;
+	}
+
+	h1{
+		font-size: 3rem;
+	}
+
+	h2{
+		font-size: 2.5rem;
+		text-align: left;
+		padding: 5px;
+		color: white;
+	}
+
+		.Title{
+			padding: 0 0 0 800px;
+
+			@media(max-width: 1800px){
+			padding: 15px 0 0 100px;
+		}
+			@media(max-width: 500px){
+			padding: 2px;
+		}
+	}
+
+		section{
+			#Skills{
+				display: flex;
+				margin: 10px;
+				font-size: 2.5rem;
+			}
+			#Goals{
+				display: flex;
+				margin: 10px;
+				font-size: 2.5rem;
+			}
+			p{
+				display: flex;
+				padding: 10px;
+				
+				font-size: 2rem;
+			}
+			.box2{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-content: center;
+				border: 4px solid gray;
+				background-color: darkgray;
+				margin: 10px;
+				width: 80%;
+
+				
+			}
+}
+
+.Flex{
+	display: flex;
+		.box{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-content: center;
+			border: 4px solid gray;
+			background-color: darkgray;
+			width: 40%;
+			margin: 200px 0 0 10px;
+			height: auto;
+	}
+}
+
+header {
+
+	nav {
+		width: 400px;
+
+			li a{
+				display: flex;
+				list-style-type: none;
+				text-decoration: none;
+				font-size: 2rem;
+				color: white;
+				background-color: hotpink;
+				border: 1px solid gray;
+				border-right: 2px solid gray;
+				padding: 5px;	
+				}
+
+				a:hover{
+					background-color: pink;
+					color: white;
+					padding: 0;
+				}
+}
+}
+
+	.anchor1{
+		padding-left: 0;
+		animation: text 1s 1;
+		animation-fill-mode: forwards;
+
+		@keyframes text {
+			100%{	
+				padding-left: 300px;
+			}
+		}
+	}
+
+	.anchor2{
+		padding-left: 0;
+		animation: text2 1s 1;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+
+		@keyframes text2 {
+
+			100%{
+				padding-left: 275px;
+			}
+		}
+	}
+
+	.anchor3{
+		padding-left: 0;
+		animation: text3 1s 1;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+
+		@keyframes text3 {
+
+			100%{
+				padding-left: 200px;
+			}
+		}
+	}
+
+	.lastanchor{
+		padding-left: 0;
+		animation: text4 1s 1;
+		animation-fill-mode: forwards;
+		animation-delay: 3s;
+
+		@keyframes text4 {
+
+			100%{
+				padding-left: 150px;
+			}
+		}
+	}
+
+	.justkidding{
+		padding-left: 0;
+		animation: text5 1s 1;
+		animation-fill-mode: forwards;
+		animation-delay: 4s;
+
+		@keyframes text5 {
+			
+			100%{
+				padding-left: 100px;
+			}
+		}
+	}
+
+	footer{
+		nav{
+			width: 80%;
+			ul{
+				display: flex;
+				justify-content:space-around;
+			li{
+				display: flex;
+				justify-content: space-around;
+
+				a{
+				display:flex;
+				justify-content: space-between;
+				text-decoration: none;
+				list-style-type: none;
+				font-size: 2rem;
+				color: black;
+				border: 2px solid black;
+				border-radius: 25%;
+				padding: 5px;
+				background-color:hotpink;
+			}
+		}
+	}
+			a:hover{
+				background-color: pink;
+				color: white;
+			}
+		}
+	}
+}
+
+.middle-image{
+margin: 10px;
+width: 80%;
+}
