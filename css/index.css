@@ -180,6 +180,12 @@ body .Title {
     padding: 2px;
   }
 }
+html section .botBorder,
+body section .botBorder {
+  width: 100%;
+  left: 0;
+  margin: 0;
+}
 html section #Skills,
 body section #Skills {
   display: flex;
