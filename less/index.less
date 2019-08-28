@@ -58,6 +58,20 @@ table {
 	margin: auto;
 }
 
+.color{
+	color: white;
+}
+
+.border{
+	border: 4px solid gray;
+	background-color: darkgray;
+}
+@number: 2.5rem;
+
+.font{
+	font-family: 'Acme', sans-serif;
+}
+
 html, body {
 	height: 100%;
 	background-image: url('../images/bg.PNG');
@@ -75,14 +89,16 @@ html, body {
 
 	h1{
 		font-size: 3rem;
-		color: white;
+		.color;
+		.font;
 	}
 
 	h2{
-		font-size: 2.5rem;
+		font-size: @number;
 		text-align: left;
 		padding: 5px;
-		color: white;
+		.color;
+		.font;
 	}
 
 		.Title{
@@ -105,17 +121,17 @@ html, body {
 			#Skills{
 				display: flex;
 				margin: 10px;
-				font-size: 2.5rem;
+				font-size: @number;
 			}
 			#Goals{
 				display: flex;
 				margin: 10px;
-				font-size: 2.5rem;
+				font-size: @number;
 			}
 			p{
 				display: flex;
 				padding: 10px;
-				
+				.font;
 				font-size: 2rem;
 			}
 			.box2{
@@ -123,8 +139,7 @@ html, body {
 				flex-direction: column;
 				justify-content: space-between;
 				align-content: center;
-				border: 4px solid gray;
-				background-color: darkgray;
+				.border;
 				margin: 10px;
 				width: 80%;
 
@@ -139,8 +154,7 @@ html, body {
 			flex-direction: column;
 			justify-content: space-between;
 			align-content: center;
-			border: 4px solid gray;
-			background-color: darkgray;
+			.border;
 			width: 40%;
 			margin: 200px 0 0 10px;
 			height: auto;
@@ -157,7 +171,8 @@ header {
 				list-style-type: none;
 				text-decoration: none;
 				font-size: 2rem;
-				color: white;
+				.color;
+				.font;
 				background-color: hotpink;
 				border: 1px solid gray;
 				border-right: 2px solid gray;
@@ -166,7 +181,7 @@ header {
 
 				a:hover{
 					background-color: pink;
-					color: white;
+					.color;
 					padding: 0;
 				}
 }
@@ -261,12 +276,13 @@ header {
 				border-radius: 60%;
 				padding: 10px;
 				background-color:hotpink;
+				.font;
 			}
 		}
 	}
 			a:hover{
 				background-color: pink;
-				color: white;
+				.color;
 			}
 		}
 	}
