@@ -153,6 +153,7 @@ body {
   background-color: black;
   background-position: 100%;
   font-size: 0.625rem;
+  scroll-behavior: smooth;
 }
 @media (max-width: 800px) {
   html,
@@ -356,7 +357,7 @@ body footer nav ul li a {
   color: black;
   border: none;
   border-radius: 60%;
-  padding: 10px;
+  padding: 3%;
   background-color: hotpink;
   font-family: 'Acme', sans-serif;
 }
