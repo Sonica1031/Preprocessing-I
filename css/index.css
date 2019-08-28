@@ -357,7 +357,8 @@ body footer nav ul li a {
   color: black;
   border: none;
   border-radius: 60%;
-  padding: 3%;
+  padding: 15px;
+  margin: 10px;
   background-color: hotpink;
   font-family: 'Acme', sans-serif;
 }
