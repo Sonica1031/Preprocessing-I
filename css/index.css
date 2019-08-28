@@ -160,7 +160,7 @@ body {
   body {
     background-image: url('../images/bg-mobile.PNG');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: absolute;
   }
   @supports (transition: initial) {
     html,
@@ -284,7 +284,6 @@ html header nav a:hover,
 body header nav a:hover {
   background-color: pink;
   color: white;
-  padding: 0;
 }
 html .anchor1,
 body .anchor1 {
