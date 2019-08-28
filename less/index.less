@@ -81,6 +81,10 @@ html, body {
 	background-position: 100%;
 	font-size: 0.625rem;
 	scroll-behavior: smooth;
+
+	@supports (transition: initial) {
+		background-image: url('../images/bg-mobile.PNG');
+	}
 	
 	@media(max-width:800px){
 		background-image: url('../images/bg-mobile.PNG');
@@ -162,6 +166,10 @@ html, body {
 
 			@media (max-width: 500px){
 				margin: 250px 0 0 10px;
+
+			@supports (transition: initial) {
+				margin: 200px 0 0 10px;
+				}
 			}
 	}
 }
