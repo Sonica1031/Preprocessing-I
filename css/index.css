@@ -154,7 +154,6 @@ html body {
   html body {
     background-image: url('../images/bg-mobile.JPG');
     background-repeat: no-repeat;
-    background-size: initial;
   }
   @supports (transition: initial) {
     html body {
