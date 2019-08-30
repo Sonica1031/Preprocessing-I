@@ -154,7 +154,7 @@ html body {
   html body {
     background-image: url('../images/bg-mobile.PNG');
     background-repeat: no-repeat;
-    background-size: absolute;
+    background-size: initial;
   }
   @supports (transition: initial) {
     html body {
@@ -172,78 +172,104 @@ html body {
   width: 100%;
   max-width: 800px;
 }
-.container header .NavSteph nav {
-  width: 500px;
+@media (max-width: 1200px) {
+  .container header .NavSteph {
+    flex-direction: column;
+  }
 }
-.container header .NavSteph nav li a {
+.container header .NavSteph nav {
+  width: 750px;
+}
+@media (max-width: 1200px) {
+  .container header .NavSteph nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 800px) {
+  .container header .NavSteph nav ul {
+    width: 450px;
+    height: 150px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+.container header .NavSteph nav ul li a {
   display: flex;
   list-style-type: none;
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
   font-family: 'Acme', sans-serif;
-  background-color: hotpink;
+  background-color: #FF59CC;
   border: 1px solid gray;
   border-right: 2px solid gray;
   padding: 5px;
   width: 375px;
 }
-.container header .NavSteph nav .anchor1 {
-  padding-left: 0;
-  animation: text 1s 1;
-  animation-fill-mode: forwards;
-}
-@keyframes text {
-  100% {
-    padding-left: 300px;
+@media (max-width: 1200px) {
+  .container header .NavSteph nav ul li a {
+    width: 150px;
   }
 }
-.container header .NavSteph nav .anchor2 {
-  padding-left: 0;
-  animation: text2 1s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-@keyframes text2 {
-  100% {
-    padding-left: 275px;
+@media (min-width: 1201px) {
+  .container header .NavSteph nav ul .anchor1 {
+    padding-left: 0;
+    animation: text 1s 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes text {
+    100% {
+      padding-left: 300px;
+    }
+  }
+  .container header .NavSteph nav ul .anchor2 {
+    padding-left: 0;
+    animation: text2 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  @keyframes text2 {
+    100% {
+      padding-left: 275px;
+    }
+  }
+  .container header .NavSteph nav ul .anchor3 {
+    padding-left: 0;
+    animation: text3 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+  @keyframes text3 {
+    100% {
+      padding-left: 200px;
+    }
+  }
+  .container header .NavSteph nav ul .lastanchor {
+    padding-left: 0;
+    animation: text4 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+  @keyframes text4 {
+    100% {
+      padding-left: 150px;
+    }
+  }
+  .container header .NavSteph nav ul .justkidding {
+    padding-left: 0;
+    animation: text5 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+  }
+  @keyframes text5 {
+    100% {
+      padding-left: 100px;
+    }
   }
 }
-.container header .NavSteph nav .anchor3 {
-  padding-left: 0;
-  animation: text3 1s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-@keyframes text3 {
-  100% {
-    padding-left: 200px;
-  }
-}
-.container header .NavSteph nav .lastanchor {
-  padding-left: 0;
-  animation: text4 1s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-}
-@keyframes text4 {
-  100% {
-    padding-left: 150px;
-  }
-}
-.container header .NavSteph nav .justkidding {
-  padding-left: 0;
-  animation: text5 1s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
-}
-@keyframes text5 {
-  100% {
-    padding-left: 100px;
-  }
-}
-.container header .NavSteph nav a:hover {
-  background-color: pink;
+.container header .NavSteph nav ul a:hover {
+  background-color: #FF83D9;
   color: white;
 }
 .container header .NavSteph .Title {
@@ -255,39 +281,49 @@ html body {
   width: 300px;
   white-space: nowrap;
 }
-h1 {
+@media (max-width: 1200px) {
+  .container header .NavSteph .Title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .container header .NavSteph .Title {
+    margin-top: 100px;
+  }
+}
+.container h1 {
   color: white;
   font-family: 'Acme', sans-serif;
 }
-h2 {
+.container h2 {
   font-size: 2.5rem;
   text-align: left;
   padding: 5px;
   color: white;
   font-family: 'Acme', sans-serif;
 }
-section #Skills {
+.container section #Skills {
   display: flex;
   margin: 10px;
   font-size: 2.5rem;
 }
-section #Goals {
+.container section #Goals {
   display: flex;
   margin: 10px;
   font-size: 2.5rem;
 }
-section p {
+.container section p {
   display: flex;
   padding: 10px;
   font-family: 'Acme', sans-serif;
   font-size: 2.5rem;
 }
-section .botBorder {
+.container section .botBorder {
   width: 100%;
   left: 0;
   margin: 0;
 }
-section .box2 {
+.container section .box2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -297,10 +333,15 @@ section .box2 {
   margin: 10px;
   width: 80%;
 }
-.Flex {
+.container .Flex {
   display: flex;
 }
-.Flex .box {
+@media (max-width: 500px) {
+  .container .Flex {
+    border-top: 4px dashed gray;
+  }
+}
+.container .Flex .box {
   display: grid;
   border: 4px solid gray;
   background-color: darkgray;
@@ -308,28 +349,33 @@ section .box2 {
   margin: 350px 0 0 10px;
   height: auto;
 }
+@media (max-width: 1200px) {
+  .container .Flex .box {
+    margin-top: 170px;
+  }
+}
 @media (max-width: 500px) {
-  .Flex .box {
+  .container .Flex .box {
     margin: 50px 0 0 10px;
   }
 }
-footer nav {
+.container footer .botnav nav {
   width: 80%;
 }
-footer nav ul {
+.container footer .botnav nav ul {
   display: flex;
   justify-content: space-around;
 }
-footer nav ul li {
+.container footer .botnav nav ul li {
   display: flex;
   justify-content: space-around;
 }
-footer nav ul li a {
+.container footer .botnav nav ul li a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: black;
   border: none;
   border-radius: 60%;
@@ -338,11 +384,11 @@ footer nav ul li a {
   background-color: #FF59CC;
   font-family: 'Acme', sans-serif;
 }
-footer nav a:hover {
+.container footer .botnav nav a:hover {
   background-color: #FF83D9;
   color: white;
 }
-.middle-image {
+.container .middle-image {
   margin: 10px;
   width: 80%;
   border-bottom: 2px dashed gray;

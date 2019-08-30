@@ -19,9 +19,23 @@
 		justify-content: space-around;
 		width: 100%;
 		max-width: 800px;
-
+		@media @deskt{
+			flex-direction: column;
+		}
 		nav {
-			width: 500px;
+			width: 750px;
+			ul{
+				@media @deskt{
+					display: flex;
+					justify-content: space-around;
+				}
+
+				@media (max-width: 800px){
+					width: 450px;
+					height: 150px;
+					flex-wrap: wrap;
+					align-content: flex-start;
+				}
 				li a{
 					display: flex;
 					list-style-type: none;
@@ -29,13 +43,17 @@
 					font-size: 2.5rem;
 					color: @w;
 					.font;
-					background-color: hotpink;
+					background-color: #FF59CC;
 					border: 1px solid gray;
 					border-right: 2px solid gray;
 					padding: 5px;
-					width: 375px;	
+					width: 375px;
+					
+					@media @deskt{
+						width: 150px;
+					}
 				}
-
+				@media(min-width:1201px){
 					.anchor1{
 						padding-left: 0;
 						animation: text 1s 1;
@@ -44,10 +62,12 @@
 						@keyframes text {
 							100%{	
 								padding-left: 300px;
+									
+							}
+
 							}
 						}
-					}
-				
+
 					.anchor2{
 						padding-left: 0;
 						animation: text2 1s 1;
@@ -58,10 +78,12 @@
 				
 							100%{
 								padding-left: 275px;
+									
+								}
+									
+								}
+
 							}
-						}
-					}
-				
 					.anchor3{
 						padding-left: 0;
 						animation: text3 1s 1;
@@ -72,8 +94,9 @@
 				
 							100%{
 								padding-left: 200px;
+							}					
 							}
-						}
+
 					}
 				
 					.lastanchor{
@@ -103,14 +126,14 @@
 							}
 						}
 					}
-			
+				}
+
 					a:hover{
-						background-color: pink;
+						background-color: #FF83D9;
 						color: @w;
 					}
-
-					
 				}
+			}
 
 		.Title{
 			padding: 0 0 0 20%;
@@ -120,9 +143,16 @@
 			margin-top: 4%;
 			width: 300px;
 			white-space: nowrap;
+			
+			@media @deskt{
+				font-size: 3rem;
+			}
+			@media(max-width: 800px){
+				margin-top: 100px;
+			}
+		
 		}
 	}
-}
 }
 
 	h1{
@@ -176,6 +206,9 @@
 
 .Flex{
 	display: flex;
+	@media (max-width: 500px){
+		border-top: @bored;
+	}
 		.box{
 			display: grid;
 			.bordered;
@@ -183,6 +216,9 @@
 			margin: 350px 0 0 10px;
 			height: auto;
 
+			@media (max-width: 1200px){
+				margin-top: 170px;
+			}
 			@media (max-width: 500px){
 				margin: 50px 0 0 10px;
 				}
@@ -195,29 +231,30 @@
 
 	
 	footer{
-		nav{
-			width: 80%;
-			ul{
-				display: flex;
-				justify-content:space-around;
-			li{
-				display: flex;
-				justify-content: space-around;
+		.botnav{
+			nav{
+				width: 80%;
+				ul{
+					display: flex;
+					justify-content:space-around;
+					li{
+						display: flex;
+						justify-content: space-around;
 
-				a{
-				display:flex;
-				justify-content: space-between;
-				text-decoration: none;
-				list-style-type: none;
-				font-size: 2rem;
-				color: black;
-				border: none;
-				border-radius: 60%;
-				padding: 15px;
-				margin: 10px;
-				background-color: #FF59CC;
-				.font;
-			}
+						a{
+						display:flex;
+						justify-content: space-between;
+						text-decoration: none;
+						list-style-type: none;
+						font-size: 2.5rem;
+						color: black;
+						border: none;
+						border-radius: 60%;
+						padding: 15px;
+						margin: 10px;
+						background-color: #FF59CC;
+						.font;
+				}
 		}
 	}
 			a:hover{
@@ -226,9 +263,11 @@
 			}
 		}
 	}
+}
 
 .middle-image{
 margin: 10px;
 width: 80%;
 .bored;
+}
 }
