@@ -335,11 +335,11 @@ footer nav ul li a {
   border-radius: 60%;
   padding: 15px;
   margin: 10px;
-  background-color: hotpink;
+  background-color: #FF59CC;
   font-family: 'Acme', sans-serif;
 }
 footer nav a:hover {
-  background-color: pink;
+  background-color: #FF83D9;
   color: white;
 }
 .middle-image {
