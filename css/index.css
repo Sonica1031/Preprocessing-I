@@ -359,18 +359,23 @@ html body {
     margin: 50px 0 0 10px;
   }
 }
-.container footer .botnav nav {
+.container .middle-image {
+  margin: 10px;
+  width: 80%;
+  border-bottom: 2px dashed gray;
+}
+footer nav {
   width: 80%;
 }
-.container footer .botnav nav ul {
+footer nav ul {
   display: flex;
   justify-content: space-around;
 }
-.container footer .botnav nav ul li {
+footer nav ul li {
   display: flex;
   justify-content: space-around;
 }
-.container footer .botnav nav ul li a {
+footer nav ul li a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -384,12 +389,7 @@ html body {
   background-color: #FF59CC;
   font-family: 'Acme', sans-serif;
 }
-.container footer .botnav nav a:hover {
+footer nav a:hover {
   background-color: #FF83D9;
   color: white;
-}
-.container .middle-image {
-  margin: 10px;
-  width: 80%;
-  border-bottom: 2px dashed gray;
 }
