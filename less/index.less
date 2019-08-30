@@ -4,97 +4,129 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+@import "variables";
+@import "mixins";
+@import "global";
 
 .container{
 	width: 90%;
 	margin: auto;
-}
 
-.color{
-	color: white;
-}
+	header {
 
-.border{
-	border: 4px solid gray;
-	background-color: darkgray;
-}
-@number: 2.5rem;
+	.NavSteph{
+		display:flex;
+		justify-content: space-around;
+		width: 100%;
+		max-width: 800px;
 
-.font{
-	font-family: 'Acme', sans-serif;
-}
+		nav {
+			width: 500px;
+				li a{
+					display: flex;
+					list-style-type: none;
+					text-decoration: none;
+					font-size: 2.5rem;
+					color: @w;
+					.font;
+					background-color: hotpink;
+					border: 1px solid gray;
+					border-right: 2px solid gray;
+					padding: 5px;
+					width: 375px;	
+				}
 
-html, body {
-	height: 100%;
-	background-image: url('../images/bg.PNG');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: black;
-	background-position: 100%;
-	font-size: 0.625rem;
-	scroll-behavior: smooth;
-	
-	@media(max-width:800px){
-		background-image: url('../images/bg-mobile.PNG');
-		background-repeat: no-repeat;
-		background-size: absolute;
+					.anchor1{
+						padding-left: 0;
+						animation: text 1s 1;
+						animation-fill-mode: forwards;
+				
+						@keyframes text {
+							100%{	
+								padding-left: 300px;
+							}
+						}
+					}
+				
+					.anchor2{
+						padding-left: 0;
+						animation: text2 1s 1;
+						animation-fill-mode: forwards;
+						animation-delay: 1s;
+				
+						@keyframes text2 {
+				
+							100%{
+								padding-left: 275px;
+							}
+						}
+					}
+				
+					.anchor3{
+						padding-left: 0;
+						animation: text3 1s 1;
+						animation-fill-mode: forwards;
+						animation-delay: 2s;
+				
+						@keyframes text3 {
+				
+							100%{
+								padding-left: 200px;
+							}
+						}
+					}
+				
+					.lastanchor{
+						padding-left: 0;
+						animation: text4 1s 1;
+						animation-fill-mode: forwards;
+						animation-delay: 3s;
+				
+						@keyframes text4 {
+				
+							100%{
+								padding-left: 150px;
+							}
+						}
+					}
+				
+					.justkidding{
+						padding-left: 0;
+						animation: text5 1s 1;
+						animation-fill-mode: forwards;
+						animation-delay: 4s;
+				
+						@keyframes text5 {
+							
+							100%{
+								padding-left: 100px;
+							}
+						}
+					}
+			
+					a:hover{
+						background-color: pink;
+						color: @w;
+					}
 
-		@supports (transition: initial) {
-			background-image: url('../images/bg-mobile.PNG');
+					
+				}
+
+		.Title{
+			padding: 0 0 0 20%;
+			font-size: 6rem;
+			align-items: center;
+			justify-items: center;
+			margin-top: 4%;
+			width: 300px;
+			white-space: nowrap;
 		}
 	}
+}
+}
 
 	h1{
-		font-size: 3rem;
-		.color;
+		color: @w;
 		.font;
 	}
 
@@ -102,27 +134,11 @@ html, body {
 		font-size: @number;
 		text-align: left;
 		padding: 5px;
-		.color;
+		color: @w;
 		.font;
 	}
-
-		.Title{
-			padding: 0 0 0 800px;
-
-			@media(max-width: 1800px){
-			padding: 15px 0 0 100px;
-		}
-			@media(max-width: 500px){
-			padding: 2px;
-		}
-	}
-
 		section{
-			.botBorder{
-				width: 100%;
-				left: 0;
-				margin: 0;
-			}
+			
 			#Skills{
 				display: flex;
 				margin: 10px;
@@ -137,136 +153,47 @@ html, body {
 				display: flex;
 				padding: 10px;
 				.font;
-				font-size: 2rem;
+				font-size: 2.5rem;
 			}
+			.botBorder{
+				width: 100%;
+				left: 0;
+				margin: 0;
+			}
+
 			.box2{
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				align-content: center;
-				.border;
+				.bordered;
 				margin: 10px;
 				width: 80%;
 
-				
 			}
 }
+
 
 .Flex{
 	display: flex;
 		.box{
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-content: center;
-			.border;
+			display: grid;
+			.bordered;
 			width: 40%;
-			margin: 200px 0 0 10px;
+			margin: 320px 0 0 10px;
 			height: auto;
 
 			@media (max-width: 500px){
-				margin: 250px 0 0 10px;
-			
-				@media (-webkit-transition) {
-					margin: 300px 0 0 10px;
+				margin: 50px 0 0 10px;
 				}
 			}
 			}
-	}
 
-header {
 
-	nav {
-		width: 400px;
 
-			li a{
-				display: flex;
-				list-style-type: none;
-				text-decoration: none;
-				font-size: 2rem;
-				.color;
-				.font;
-				background-color: hotpink;
-				border: 1px solid gray;
-				border-right: 2px solid gray;
-				padding: 5px;	
-				}
+	
 
-				a:hover{
-					background-color: pink;
-					.color;
-				}
-}
-}
-
-	.anchor1{
-		padding-left: 0;
-		animation: text 1s 1;
-		animation-fill-mode: forwards;
-
-		@keyframes text {
-			100%{	
-				padding-left: 300px;
-			}
-		}
-	}
-
-	.anchor2{
-		padding-left: 0;
-		animation: text2 1s 1;
-		animation-fill-mode: forwards;
-		animation-delay: 1s;
-
-		@keyframes text2 {
-
-			100%{
-				padding-left: 275px;
-			}
-		}
-	}
-
-	.anchor3{
-		padding-left: 0;
-		animation: text3 1s 1;
-		animation-fill-mode: forwards;
-		animation-delay: 2s;
-
-		@keyframes text3 {
-
-			100%{
-				padding-left: 200px;
-			}
-		}
-	}
-
-	.lastanchor{
-		padding-left: 0;
-		animation: text4 1s 1;
-		animation-fill-mode: forwards;
-		animation-delay: 3s;
-
-		@keyframes text4 {
-
-			100%{
-				padding-left: 150px;
-			}
-		}
-	}
-
-	.justkidding{
-		padding-left: 0;
-		animation: text5 1s 1;
-		animation-fill-mode: forwards;
-		animation-delay: 4s;
-
-		@keyframes text5 {
-			
-			100%{
-				padding-left: 100px;
-			}
-		}
-	}
-}
+	
 	footer{
 		nav{
 			width: 80%;
@@ -295,7 +222,7 @@ header {
 	}
 			a:hover{
 				background-color: pink;
-				.color;
+				color: @w;
 			}
 		}
 	}
@@ -303,4 +230,5 @@ header {
 .middle-image{
 margin: 10px;
 width: 80%;
+.bored;
 }

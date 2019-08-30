@@ -2,6 +2,16 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.font {
+  font-family: 'Acme', sans-serif;
+}
+.bordered {
+  border: 4px solid gray;
+  background-color: darkgray;
+}
+.bored {
+  border-bottom: 2px dashed gray;
+}
 html,
 body,
 div,
@@ -86,8 +96,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -130,163 +138,57 @@ table {
 * {
   box-sizing: border-box;
 }
-.container {
-  width: 90%;
-  margin: auto;
+html {
+  font-size: 62.5%;
 }
-.color {
-  color: white;
-}
-.border {
-  border: 4px solid gray;
-  background-color: darkgray;
-}
-.font {
-  font-family: 'Acme', sans-serif;
-}
-html,
-body {
+html body {
   height: 100%;
   background-image: url('../images/bg.PNG');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: black;
-  background-position: 100%;
-  font-size: 0.625rem;
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 @media (max-width: 800px) {
-  html,
-  body {
+  html body {
     background-image: url('../images/bg-mobile.PNG');
     background-repeat: no-repeat;
     background-size: absolute;
   }
   @supports (transition: initial) {
-    html,
-    body {
+    html body {
       background-image: url('../images/bg-mobile.PNG');
     }
   }
 }
-html h1,
-body h1 {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Acme', sans-serif;
+.container {
+  width: 90%;
+  margin: auto;
 }
-html h2,
-body h2 {
-  font-size: 2.5rem;
-  text-align: left;
-  padding: 5px;
-  color: white;
-  font-family: 'Acme', sans-serif;
-}
-html .Title,
-body .Title {
-  padding: 0 0 0 800px;
-}
-@media (max-width: 1800px) {
-  html .Title,
-  body .Title {
-    padding: 15px 0 0 100px;
-  }
-}
-@media (max-width: 500px) {
-  html .Title,
-  body .Title {
-    padding: 2px;
-  }
-}
-html section .botBorder,
-body section .botBorder {
+.container header .NavSteph {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  left: 0;
-  margin: 0;
+  max-width: 800px;
 }
-html section #Skills,
-body section #Skills {
-  display: flex;
-  margin: 10px;
-  font-size: 2.5rem;
+.container header .NavSteph nav {
+  width: 500px;
 }
-html section #Goals,
-body section #Goals {
-  display: flex;
-  margin: 10px;
-  font-size: 2.5rem;
-}
-html section p,
-body section p {
-  display: flex;
-  padding: 10px;
-  font-family: 'Acme', sans-serif;
-  font-size: 2rem;
-}
-html section .box2,
-body section .box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  border: 4px solid gray;
-  background-color: darkgray;
-  margin: 10px;
-  width: 80%;
-}
-html .Flex,
-body .Flex {
-  display: flex;
-}
-html .Flex .box,
-body .Flex .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  border: 4px solid gray;
-  background-color: darkgray;
-  width: 40%;
-  margin: 200px 0 0 10px;
-  height: auto;
-}
-@media (max-width: 500px) {
-  html .Flex .box,
-  body .Flex .box {
-    margin: 250px 0 0 10px;
-  }
-}
-@media (max-width: 500px) and (-webkit-transition) {
-  html .Flex .box,
-  body .Flex .box {
-    margin: 300px 0 0 10px;
-  }
-}
-html header nav,
-body header nav {
-  width: 400px;
-}
-html header nav li a,
-body header nav li a {
+.container header .NavSteph nav li a {
   display: flex;
   list-style-type: none;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   font-family: 'Acme', sans-serif;
   background-color: hotpink;
   border: 1px solid gray;
   border-right: 2px solid gray;
   padding: 5px;
+  width: 375px;
 }
-html header nav a:hover,
-body header nav a:hover {
-  background-color: pink;
-  color: white;
-}
-html .anchor1,
-body .anchor1 {
+.container header .NavSteph nav .anchor1 {
   padding-left: 0;
   animation: text 1s 1;
   animation-fill-mode: forwards;
@@ -296,8 +198,7 @@ body .anchor1 {
     padding-left: 300px;
   }
 }
-html .anchor2,
-body .anchor2 {
+.container header .NavSteph nav .anchor2 {
   padding-left: 0;
   animation: text2 1s 1;
   animation-fill-mode: forwards;
@@ -308,8 +209,7 @@ body .anchor2 {
     padding-left: 275px;
   }
 }
-html .anchor3,
-body .anchor3 {
+.container header .NavSteph nav .anchor3 {
   padding-left: 0;
   animation: text3 1s 1;
   animation-fill-mode: forwards;
@@ -320,8 +220,7 @@ body .anchor3 {
     padding-left: 200px;
   }
 }
-html .lastanchor,
-body .lastanchor {
+.container header .NavSteph nav .lastanchor {
   padding-left: 0;
   animation: text4 1s 1;
   animation-fill-mode: forwards;
@@ -332,8 +231,7 @@ body .lastanchor {
     padding-left: 150px;
   }
 }
-html .justkidding,
-body .justkidding {
+.container header .NavSteph nav .justkidding {
   padding-left: 0;
   animation: text5 1s 1;
   animation-fill-mode: forwards;
@@ -342,6 +240,77 @@ body .justkidding {
 @keyframes text5 {
   100% {
     padding-left: 100px;
+  }
+}
+.container header .NavSteph nav a:hover {
+  background-color: pink;
+  color: white;
+}
+.container header .NavSteph .Title {
+  padding: 0 0 0 20%;
+  font-size: 6rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 4%;
+  width: 300px;
+  white-space: nowrap;
+}
+h1 {
+  color: white;
+  font-family: 'Acme', sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 5px;
+  color: white;
+  font-family: 'Acme', sans-serif;
+}
+section #Skills {
+  display: flex;
+  margin: 10px;
+  font-size: 2.5rem;
+}
+section #Goals {
+  display: flex;
+  margin: 10px;
+  font-size: 2.5rem;
+}
+section p {
+  display: flex;
+  padding: 10px;
+  font-family: 'Acme', sans-serif;
+  font-size: 2.5rem;
+}
+section .botBorder {
+  width: 100%;
+  left: 0;
+  margin: 0;
+}
+section .box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  border: 4px solid gray;
+  background-color: darkgray;
+  margin: 10px;
+  width: 80%;
+}
+.Flex {
+  display: flex;
+}
+.Flex .box {
+  display: grid;
+  border: 4px solid gray;
+  background-color: darkgray;
+  width: 40%;
+  margin: 320px 0 0 10px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .Flex .box {
+    margin: 50px 0 0 10px;
   }
 }
 footer nav {
@@ -376,4 +345,5 @@ footer nav a:hover {
 .middle-image {
   margin: 10px;
   width: 80%;
+  border-bottom: 2px dashed gray;
 }
