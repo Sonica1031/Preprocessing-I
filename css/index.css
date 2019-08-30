@@ -305,7 +305,7 @@ section .box2 {
   border: 4px solid gray;
   background-color: darkgray;
   width: 40%;
-  margin: 320px 0 0 10px;
+  margin: 350px 0 0 10px;
   height: auto;
 }
 @media (max-width: 500px) {
