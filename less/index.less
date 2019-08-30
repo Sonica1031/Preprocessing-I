@@ -21,9 +21,13 @@
 		max-width: 800px;
 		@media @deskt{
 			flex-direction: column;
+			max-width: 500px;
 		}
 		nav {
 			width: 750px;
+			@media (max-width: 500px){
+				width: 500px;
+			}
 			ul{
 				@media @deskt{
 					display: flex;
@@ -31,10 +35,14 @@
 				}
 
 				@media (max-width: 800px){
-					width: 450px;
+					max-width: 450px;
 					height: 150px;
 					flex-wrap: wrap;
 					align-content: flex-start;
+				}
+					@media(max-width: 500px){
+						max-width: 150px;
+					}
 				}
 				li a{
 					display: flex;
@@ -153,7 +161,7 @@
 		
 		}
 	}
-}
+
 
 	h1{
 		color: @w;
@@ -259,6 +267,10 @@
 						margin: 10px;
 						background-color: #FF59CC;
 						.font;
+
+						@media(max-width: 500px){
+							font-size: 1rem;
+						}
 				}
 		}
 	}

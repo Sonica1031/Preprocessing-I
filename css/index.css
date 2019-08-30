@@ -153,6 +153,7 @@ html body {
 @media (max-width: 800px) {
   html body {
     background-image: url('../images/bg-mobile.JPG');
+    back-ground-size: 80%;
     background-repeat: no-repeat;
   }
   @supports (transition: initial) {
@@ -174,10 +175,16 @@ html body {
 @media (max-width: 1200px) {
   .container header .NavSteph {
     flex-direction: column;
+    max-width: 500px;
   }
 }
 .container header .NavSteph nav {
   width: 750px;
+}
+@media (max-width: 500px) {
+  .container header .NavSteph nav {
+    width: 500px;
+  }
 }
 @media (max-width: 1200px) {
   .container header .NavSteph nav ul {
@@ -187,13 +194,18 @@ html body {
 }
 @media (max-width: 800px) {
   .container header .NavSteph nav ul {
-    width: 450px;
+    max-width: 450px;
     height: 150px;
     flex-wrap: wrap;
     align-content: flex-start;
   }
 }
-.container header .NavSteph nav ul li a {
+@media (max-width: 500px) {
+  .container header .NavSteph nav ul {
+    max-width: 150px;
+  }
+}
+.container header .NavSteph nav li a {
   display: flex;
   list-style-type: none;
   text-decoration: none;
@@ -207,12 +219,12 @@ html body {
   width: 375px;
 }
 @media (max-width: 1200px) {
-  .container header .NavSteph nav ul li a {
+  .container header .NavSteph nav li a {
     width: 150px;
   }
 }
 @media (min-width: 1201px) {
-  .container header .NavSteph nav ul .anchor1 {
+  .container header .NavSteph nav .anchor1 {
     padding-left: 0;
     animation: text 1s 1;
     animation-fill-mode: forwards;
@@ -222,7 +234,7 @@ html body {
       padding-left: 300px;
     }
   }
-  .container header .NavSteph nav ul .anchor2 {
+  .container header .NavSteph nav .anchor2 {
     padding-left: 0;
     animation: text2 1s 1;
     animation-fill-mode: forwards;
@@ -233,7 +245,7 @@ html body {
       padding-left: 275px;
     }
   }
-  .container header .NavSteph nav ul .anchor3 {
+  .container header .NavSteph nav .anchor3 {
     padding-left: 0;
     animation: text3 1s 1;
     animation-fill-mode: forwards;
@@ -244,7 +256,7 @@ html body {
       padding-left: 200px;
     }
   }
-  .container header .NavSteph nav ul .lastanchor {
+  .container header .NavSteph nav .lastanchor {
     padding-left: 0;
     animation: text4 1s 1;
     animation-fill-mode: forwards;
@@ -255,7 +267,7 @@ html body {
       padding-left: 150px;
     }
   }
-  .container header .NavSteph nav ul .justkidding {
+  .container header .NavSteph nav .justkidding {
     padding-left: 0;
     animation: text5 1s 1;
     animation-fill-mode: forwards;
@@ -267,11 +279,11 @@ html body {
     }
   }
 }
-.container header .NavSteph nav ul a:hover {
+.container header .NavSteph nav a:hover {
   background-color: #FF83D9;
   color: white;
 }
-.container header .NavSteph .Title {
+.container header .Title {
   padding: 0 0 0 20%;
   font-size: 6rem;
   align-items: center;
@@ -281,12 +293,12 @@ html body {
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
-  .container header .NavSteph .Title {
+  .container header .Title {
     font-size: 3rem;
   }
 }
 @media (max-width: 800px) {
-  .container header .NavSteph .Title {
+  .container header .Title {
     margin-top: 100px;
   }
 }
@@ -387,6 +399,11 @@ footer nav ul li a {
   margin: 10px;
   background-color: #FF59CC;
   font-family: 'Acme', sans-serif;
+}
+@media (max-width: 500px) {
+  footer nav ul li a {
+    font-size: 1rem;
+  }
 }
 footer nav a:hover {
   background-color: #FF83D9;
