@@ -26,7 +26,7 @@
 		nav {
 			width: 750px;
 			@media (max-width: 500px){
-				width: 500px;
+				width: 100%;
 			}
 			ul{
 				@media @deskt{
@@ -41,7 +41,7 @@
 					align-content: flex-start;
 				}
 					@media(max-width: 500px){
-						max-width: 150px;
+						max-width: 100%;
 					}
 				}
 				li a{
@@ -58,7 +58,7 @@
 					width: 375px;
 					
 					@media @deskt{
-						width: 150px;
+						width: 375px;
 					}
 				}
 				@media(min-width:1201px){
@@ -149,7 +149,7 @@
 			align-items: center;
 			justify-items: center;
 			margin-top: 4%;
-			width: 300px;
+			width: 150px;
 			white-space: nowrap;
 			
 			@media @deskt{
@@ -218,7 +218,8 @@
 		border-top: @bored;
 	}
 		.box{
-			display: grid;
+			display: flex;
+			justify-content: space-around;
 			.bordered;
 			width: 40%;
 			margin: 350px 0 0 10px;
@@ -229,6 +230,7 @@
 			}
 			@media (max-width: 500px){
 				margin: 50px 0 0 10px;
+				flex-direction: column;
 				}
 			}
 			}
@@ -270,6 +272,8 @@
 
 						@media(max-width: 500px){
 							font-size: 1rem;
+							padding: 5px;
+							margin: 0;
 						}
 				}
 		}

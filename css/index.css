@@ -183,7 +183,7 @@ html body {
 }
 @media (max-width: 500px) {
   .container header .NavSteph nav {
-    width: 500px;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -202,7 +202,7 @@ html body {
 }
 @media (max-width: 500px) {
   .container header .NavSteph nav ul {
-    max-width: 150px;
+    max-width: 100%;
   }
 }
 .container header .NavSteph nav li a {
@@ -220,7 +220,7 @@ html body {
 }
 @media (max-width: 1200px) {
   .container header .NavSteph nav li a {
-    width: 150px;
+    width: 375px;
   }
 }
 @media (min-width: 1201px) {
@@ -289,7 +289,7 @@ html body {
   align-items: center;
   justify-items: center;
   margin-top: 4%;
-  width: 300px;
+  width: 150px;
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
@@ -353,7 +353,8 @@ html body {
   }
 }
 .container .Flex .box {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   border: 4px solid gray;
   background-color: darkgray;
   width: 40%;
@@ -368,6 +369,7 @@ html body {
 @media (max-width: 500px) {
   .container .Flex .box {
     margin: 50px 0 0 10px;
+    flex-direction: column;
   }
 }
 .container .middle-image {
@@ -403,6 +405,8 @@ footer nav ul li a {
 @media (max-width: 500px) {
   footer nav ul li a {
     font-size: 1rem;
+    padding: 5px;
+    margin: 0;
   }
 }
 footer nav a:hover {
