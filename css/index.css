@@ -202,7 +202,7 @@ html body {
 }
 @media (max-width: 500px) {
   .container header .NavSteph nav ul {
-    max-width: 1000%;
+    max-width: 100%;
   }
 }
 .container header .NavSteph nav li a {
@@ -219,6 +219,11 @@ html body {
   width: 375px;
 }
 @media (max-width: 1200px) {
+  .container header .NavSteph nav li a {
+    width: 150px;
+  }
+}
+@media (max-width: 500px) {
   .container header .NavSteph nav li a {
     width: 200px;
   }
