@@ -152,7 +152,7 @@ html body {
 }
 @media (max-width: 800px) {
   html body {
-    background-image: url('../images/bg-mobile.PNG');
+    background-image: url('../images/bg-mobile.JPG');
     background-repeat: no-repeat;
     background-size: initial;
   }
