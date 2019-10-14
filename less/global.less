@@ -49,21 +49,14 @@ html{
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	body {
-	height: 100%;
-	background-image: url('../images/bg.PNG');
-	background-repeat: no-repeat;
+	background-image: url('../images/background.jpg');
+	background-repeat: repeat;
 	background-size: contain;
 	background-color: black;
-    font-size: 10px;
-    
-    @media(max-width:800px){
-		background-image: url('../images/bg-mobile.JPG');
-		back-ground-size: 80%;
-		background-repeat: no-repeat;
-
-        @supports (transition: initial) {
-            background-image: url('../images/bg-mobile.PNG');
-        }
+	font-size: 10px;
+	
+	@media @deskt{
+		background-image: none;
 	}
 }
 }
