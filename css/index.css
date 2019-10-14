@@ -10,7 +10,7 @@
   background-color: #5c604d;
 }
 .bored {
-  border-bottom: 2px dashed 5c604d;
+  border-bottom: 2px dashed #5c604d;
 }
 html,
 body,
@@ -204,7 +204,7 @@ header .NavSteph nav li a {
   list-style-type: none;
   text-decoration: none;
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-family: 'Acme', sans-serif;
   background-color: #f20056;
   border: 1px solid #5c604d;
@@ -230,7 +230,7 @@ header .NavSteph nav li a {
   }
   @keyframes text {
     100% {
-      color: #5c604d;
+      color: #e5e7e1;
     }
   }
   header .NavSteph nav .anchor2 {
@@ -241,8 +241,7 @@ header .NavSteph nav li a {
   }
   @keyframes text2 {
     100% {
-      color: #5c604d;
-      outline: 1px white;
+      color: #e5e7e1;
     }
   }
   header .NavSteph nav .anchor3 {
@@ -253,7 +252,7 @@ header .NavSteph nav li a {
   }
   @keyframes text3 {
     100% {
-      color: #5c604d;
+      color: #e5e7e1;
     }
   }
   header .NavSteph nav .lastanchor {
@@ -264,7 +263,7 @@ header .NavSteph nav li a {
   }
   @keyframes text4 {
     100% {
-      color: #5c604d;
+      color: #e5e7e1;
     }
   }
   header .NavSteph nav .justkidding {
@@ -275,13 +274,13 @@ header .NavSteph nav li a {
   }
   @keyframes text5 {
     100% {
-      color: #5c604d;
+      color: #e5e7e1;
     }
   }
 }
 header .NavSteph nav a:hover {
   background-color: #FF83D9;
-  color: white;
+  color: #e5e7e1;
 }
 .container {
   max-width: 700px;
@@ -309,14 +308,14 @@ header .NavSteph nav a:hover {
   }
 }
 .container h1 {
-  color: white;
+  color: #e5e7e1;
   font-family: 'Acme', sans-serif;
 }
 .container h2 {
   font-size: 2.5rem;
   text-align: left;
   padding: 5px;
-  color: white;
+  color: #e5e7e1;
   font-family: 'Acme', sans-serif;
 }
 .container section #Skills {
@@ -382,7 +381,7 @@ header .NavSteph nav a:hover {
 .container .middle-image {
   padding: 10px;
   width: 100%;
-  border-bottom: 2px dashed 5c604d;
+  border-bottom: 2px dashed #5c604d;
 }
 footer nav {
   width: 100vw;
@@ -422,5 +421,5 @@ footer nav ul li a {
 }
 footer nav a:hover {
   background-color: #FF83D9;
-  color: white;
+  color: #e5e7e1;
 }
