@@ -170,7 +170,9 @@ header .NavSteph {
 @media (min-width: 1900px) {
   header .NavSteph nav {
     width: 842px;
-    margin-left: 12px;
+    position: fixed;
+    top: 0;
+    left: 28.2%;
   }
 }
 @media (max-width: 1900px) {
@@ -299,7 +301,7 @@ header .NavSteph nav a:hover {
   background-color: #f20056;
   align-items: center;
   justify-items: center;
-  margin-top: 4%;
+  margin-top: 170px;
   white-space: nowrap;
 }
 @media (max-width: 1350px) {
