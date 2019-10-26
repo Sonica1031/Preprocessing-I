@@ -167,9 +167,11 @@ header .NavSteph {
     top: 0;
   }
 }
-header .NavSteph nav {
-  width: 842px;
-  margin-left: 12px;
+@media (min-width: 1900px) {
+  header .NavSteph nav {
+    width: 842px;
+    margin-left: 12px;
+  }
 }
 @media (max-width: 1900px) {
   header .NavSteph nav {
