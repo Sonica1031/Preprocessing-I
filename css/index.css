@@ -296,18 +296,15 @@ header .NavSteph nav a:hover {
 .container .Title {
   display: flex;
   font-size: 6rem;
-  padding-left: 20%;
   color: #5c604d;
   background-color: #f20056;
-  align-items: center;
-  justify-items: center;
+  justify-content: space-around;
   margin-top: 170px;
   white-space: nowrap;
 }
 @media (max-width: 1350px) {
   .container .Title {
     font-size: 3rem;
-    padding-left: 40%;
   }
 }
 @media (max-width: 1900px) {
